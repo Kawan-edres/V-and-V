@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  background-color: #282A3A;
+}
+
+input,
+select,textarea {
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.dark-mode{
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:15px;
+  min-height:30px; 
+  min-width: 120px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 1);
+
+
+}
+.error{
+  color: black;
+  background-color: red;
+  width: 50%;
+  margin-left: auto;
+}
+.pass{
+  color: black;
+  background-color: green;
+  width: 50%;
+  margin-left: auto;
+
+}
+.dark-mode:active{
+  transform: scale(.999) translate(5px,5px);
+  
+}
+.wrapper {
+  /* background: linear-gradient(90.04deg, #F53838 0.04%, #C60000 65.51%); */
+  background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+  border-radius: 10px;
+  width: 700px;
+  padding: 20px 70px;
+}
+.form-header {
+  margin-bottom: 25px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.radio-container {
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+.radio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  column-gap: 10px;
+  row-gap: 30px;
+}
+.labels-column {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35%;
+  gap: 20px;
+}
+.labels-row {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.name-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.name-input {
+  width: 100%;
+}
+
+.input-date,
+.input-time,
+.input-dine-in,
+.input-email,
+.select-age,
+.select-location {
+  margin-bottom: 10px;
+}
+.submite-button {
+
+    display: flex;
+    justify-content: center;
+ 
+
+}
+.submite-button:active{
+    transform: scale(.9);
+
+}
+.submite-button .btn{
+  width: 40%;
+  padding: 10px 5px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+option{
+  background-color: pink;
+  font-size: 1.1rem;
+  
+
+}
+span{
+  color: red;
+}
+
+input[type="radio"]{
+  accent-color: green;
+
+}
+
+select{
+  border-radius: 4px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <button class="dark-mode">Dark Mode</button>
+    <div class="wrapper">
+        <div class="form-header">
+            <h1 class="form-title">Restaurant Feedback Form</h1>
+            <p class="form-text">Please help us improve our restaurant services by filling in our feedback form. Thank
+                you!</p>
+        </div>
+        <form class="form">
+            <label>Name</label>
+            <div class="name-row">
+                <input class="name-input" type="text" placeholder="First" >
+                <input class="name-input lastName" type="text" placeholder="Last" required >
+            </div>
+            <p class="error"></p>
+            <p class="pass"></p>
+
+            <label>Email</label>
+            <input class="input-email" type="email" placeholder="email@gmail.com" >
+            <label>Location You Visited       <span>*</span></label>
+            <select class="select-location">
+                <option class="options" value="">*Please Select*</option>
+                <option class="options" value="Erbil">Erbil</option>
+                <option class="options" value="Kerkuk">Kerkuk</option>
+                <option class="options" value="Halabja">Halabja</option>
+                <option class="options" value="Sulimani">Sulimani</option>
+                <option class="options" value="Dhok">Dhok</option>
+            </select>
+            <label>Day Visited <span>*</span></label>
+            <input class="input-date" type="date">
+            <label>Time Visited <span>*</span></label>
+            <input class="input-time" type="time">
+            <div class="input-dine-in">
+                <label>Dine In / Take Out</label>
+                <p>
+                    <input type="radio" name="tt">
+                    <label>Dine In</label>
+                </p>
+                <p>
+                    <input type="radio" name="tt">
+                    <label>Take Out</label>
+                </p>
+            </div>
+            <label>Age  <span>*</span></label>
+            <select class="select-age">
+                <option value="">*Please Select*</option>
+                <option value="6+">6-18</option>
+                <option value="18+">18-24</option>
+                <option value="24+">24-30</option>
+                <option value="30+">30-46</option>
+                <option value="46+">46+</option>
+            </select>
+            <div class="labels-column">
+                <label>Amazing </label>
+                <label>Good</label>
+                <label>Decent</label>
+                <label>Disappointment</label>
+            </div>
+            <div class="radio-container">
+                <div class="labels-row">
+                    <label>Food Quality</label>
+                    <label>Overall Service Quality</label>
+                    <label>Speed of Service</label>
+                    <label>Price</label>
+                    <label>Overall Experience</label>
+                </div>
+                <div class="radio-grid">
+                    <input type="radio" name="quality">
+                    <input type="radio" name="quality">
+                    <input type="radio" name="quality">
+                    <input type="radio" name="quality">
+                    <input type="radio" name="service">
+                    <input type="radio" name="service">
+                    <input type="radio" name="service">
+                    <input type="radio" name="service">
+                    <input type="radio" name="speed">
+                    <input type="radio" name="speed">
+                    <input type="radio" name="speed">
+                    <input type="radio" name="speed">
+                    <input type="radio" name="price">
+                    <input type="radio" name="price">
+                    <input type="radio" name="price">
+                    <input type="radio" name="price">
+                    <input type="radio" name="experience">
+                    <input type="radio" name="experience">
+                    <input type="radio" name="experience">
+                    <input type="radio" name="experience">
+                </div>
+            </div>
+            <label>Any comments, questions or suggestions?</label>
+            <textarea cols="74" rows="8"></textarea>
+            <div class="submite-button">
+                <button class="btn">SEND FEEDBACK</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
